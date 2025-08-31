@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>moliseke — Cloud Migrations & Email Moves for SMBs</title>
+    <meta name="description" content="On-prem to Azure & AWS migrations, email to Microsoft 365 & Google Workspace, and infrastructure deployments with Terraform." />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <meta name="theme-color" content="#0E1B2E" />
+
+    <!-- Open Graph / Twitter (all relative; no canonical or og:url) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="moliseke — Clear. Secure. Fast." />
+    <meta property="og:description" content="On-prem → Azure/AWS migrations, email to Microsoft 365/Google Workspace, Terraform deployments. US, CA, UK, EU & AU." />
+    <meta property="og:image" content="og.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="moliseke — migrations & email moves" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="moliseke — Clear. Secure. Fast." />
+    <meta name="twitter:description" content="On-prem → Azure/AWS migrations, email to Microsoft 365 & Google Workspace, and Terraform deployments for SMBs." />
+    <meta name="twitter:image" content="og.png" />
+
+    <!-- Base styles -->
+    <style>
+      :root{--midnight:#0E1B2E;--brand:#2A6AF4;--teal:#00796B;--neutral:#475569;--cloud:#F5F7FA;--white:#FFFFFF}
+      html,body,#root{height:100%}
+      body{margin:0;background:var(--cloud);color:var(--neutral);font-family:Inter,system-ui,Arial,sans-serif}
+      .container{max-width:1120px;margin:0 auto;padding:0 24px}
+      .btn{display:inline-flex;gap:8px;align-items:center;padding:12px 18px;border-radius:14px;font-weight:700;text-decoration:none}
+      .btn-primary{background:var(--brand);color:#fff}
+      .btn-outline{border:1px solid rgba(255,255,255,.35);color:#fff}
+      .card{background:#fff;border:1px solid #e5e7eb;border-radius:20px;padding:20px;box-shadow:0 8px 24px rgba(2,6,23,.06)}
+      .chip{display:inline-block;border:1px solid #e5e7eb;background:#fff;border-radius:999px;padding:8px 14px;font-size:14px}
+      header.sticky{position:sticky;top:0;backdrop-filter:blur(10px);background:rgba(255,255,255,.7);border-bottom:1px solid #e5e7eb;z-index:40}
+      nav a{color:var(--neutral);text-decoration:none;margin-left:18px}
+      nav a:hover{text-decoration:underline}
+      h1,h2,h3{font-family:Manrope,Inter,Arial,sans-serif}
+      .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+      .grid{display:grid;gap:16px}
+      @media (min-width:900px){ .grid-3{grid-template-columns:1fr 1fr 1fr} .grid-5{grid-template-columns:repeat(5,1fr)} }
+    </style>
+  </head>
+
+  <body>
+    <div id="root"></div>
+
+    <noscript>
+      <style>body{font-family:system-ui,Arial,sans-serif;padding:24px}</style>
+      <h1>moliseke</h1>
+      <p>Enable JavaScript to view this site.</p>
+    </noscript>
+
+    <!-- Vite will rewrite this path on build -->
+    <script type="module" src="src/main.jsx"></script>
+  </body>
+</html>
