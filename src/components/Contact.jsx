@@ -10,10 +10,6 @@ export default function Contact() {
           <form
             name='contact'
             method='POST'
-            action='/'
-            data-netlify='true'
-            netlify-honeypot='bot-field'
-            data-redirect='/'
             className={styles.contactForm}
           >
           <input type='hidden' name='form-name' value='contact' />
