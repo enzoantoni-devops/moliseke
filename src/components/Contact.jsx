@@ -12,6 +12,7 @@ export default function Contact() {
           method='POST'
           action='/'
           data-redirect='/'
+          data-honeypot='bot-field'
           className={styles.contactForm}
         >
           <input type='hidden' name='form-name' value='contact' />
