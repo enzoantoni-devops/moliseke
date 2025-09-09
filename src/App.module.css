@@ -25,3 +25,7 @@
 .footerInner{display:flex;align-items:center;justify-content:space-between;font-size:14px}
 .footerBrand{display:flex;align-items:center;gap:8px}
 .footerCopy{opacity:.7}
+.contactForm{margin-top:12px;max-width:600px;display:flex;flex-direction:column;gap:12px}
+.contactField{display:flex;flex-direction:column;gap:4px}
+.contactField label{font-weight:700}
+.contactField input,.contactField textarea{padding:12px;border-radius:12px;border:none;color:var(--midnight);background:#fff}
