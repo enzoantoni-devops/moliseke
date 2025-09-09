@@ -10,15 +10,14 @@ export default function Contact() {
         <form
           name='contact'
           method='POST'
-          data-netlify='true'
-          data-netlify-honeypot='bot-field'
+          action='/forms/contact'
           className={styles.contactForm}
         >
           <input type='hidden' name='form-name' value='contact' />
           <p className='sr-only'>
             <label>
               Don’t fill this out if you're human:
-              <input name='bot-field' />
+              <input name='bot-field' tabIndex='-1' autoComplete='off' />
             </label>
           </p>
           <div className={styles.contactField}>
