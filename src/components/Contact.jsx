@@ -7,14 +7,15 @@ export default function Contact() {
       <div className='container'>
         <h2 className={styles.sectionHeadingLight}>Let’s talk about your migration</h2>
         <p className={styles.contactText}>Send us a note about your current environment and target platform. We’ll reply with a brief plan and timeline options.</p>
-        <form
-          name='contact'
-          method='POST'
-          action='/'
-          data-redirect='/'
-          data-honeypot='bot-field'
-          className={styles.contactForm}
-        >
+          <form
+            name='contact'
+            method='POST'
+            action='/'
+            data-netlify='true'
+            netlify-honeypot='bot-field'
+            data-redirect='/'
+            className={styles.contactForm}
+          >
           <input type='hidden' name='form-name' value='contact' />
           <p className='sr-only'>
             <label>
