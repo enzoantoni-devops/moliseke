@@ -1,0 +1,27 @@
+.app{background:var(--cloud);color:var(--neutral)}
+.heroContainer{padding:64px 24px}
+.hero{background:var(--midnight);color:#fff;border-radius:24px;padding:40px 32px;position:relative;box-shadow:0 24px 40px rgba(2,6,23,.2)}
+.heroTitle{font-family:Manrope,Inter,Arial,sans-serif;font-size:48px;line-height:1.1;font-weight:800}
+.heroText{margin-top:12px;opacity:.92;max-width:740px}
+.heroActions{margin-top:18px;display:flex;gap:12px;flex-wrap:wrap}
+.heroBrandIcon{position:absolute;right:24px;bottom:-24px;opacity:.08;transform:scale(2)}
+.sectionPad{padding:48px 0}
+.sectionHeading{font-family:Manrope,Inter,Arial,sans-serif;font-weight:800;color:var(--midnight)}
+.sectionHeadingLight{font-family:Manrope,Inter,Arial,sans-serif;font-weight:800}
+.servicesGrid{margin-top:12px}
+.cardHeader{display:flex;align-items:center;gap:10px}
+.whySection{background:#fff}
+.whyGrid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;margin-top:12px}
+.whyCardText{margin-top:6px}
+.approachGrid{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin-top:12px}
+.approachStep{color:var(--teal);font-weight:700;font-size:12px}
+.approachTitle{font-weight:700}
+.approachDesc{font-size:14px;opacity:.8}
+.regionsGrid{display:flex;flex-wrap:wrap;gap:10px;margin-top:10px}
+.contactSection{background:var(--midnight);color:#fff}
+.contactText{opacity:.9;max-width:720px}
+.contactActions{margin-top:12px;display:flex;gap:12px;flex-wrap:wrap}
+.footer{padding:16px 0;background:#fff;border-top:1px solid #e5e7eb}
+.footerInner{display:flex;align-items:center;justify-content:space-between;font-size:14px}
+.footerBrand{display:flex;align-items:center;gap:8px}
+.footerCopy{opacity:.7}
