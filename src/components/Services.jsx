@@ -62,7 +62,7 @@ export default function Services() {
       <div className='container'>
         <h2 className={styles.sectionHeading}>Services</h2>
         <div className={`grid grid-3 ${styles.servicesGrid}`}>
-          <div className='card' ref={(el) => (cardsRef.current[0] = el)}>
+          <div className='card service-card' ref={(el) => (cardsRef.current[0] = el)}>
             <div className={styles.cardHeader}>
               <Icon name='cloud' />
               <h3>On-prem → Azure & AWS migrations</h3>
@@ -74,7 +74,7 @@ export default function Services() {
               <li>• Security & compliance baked-in</li>
             </ul>
           </div>
-          <div className='card' ref={(el) => (cardsRef.current[1] = el)}>
+          <div className='card service-card' ref={(el) => (cardsRef.current[1] = el)}>
             <div className={styles.cardHeader}>
               <Icon name='stack' />
               <h3>Email to Microsoft 365 & Google Workspace</h3>
@@ -86,7 +86,7 @@ export default function Services() {
               <li>• End-user enablement & support</li>
             </ul>
           </div>
-          <div className='card' ref={(el) => (cardsRef.current[2] = el)}>
+          <div className='card service-card' ref={(el) => (cardsRef.current[2] = el)}>
             <div className={styles.cardHeader}>
               <Icon name='server' />
               <h3>Infrastructure deployments with Terraform</h3>
