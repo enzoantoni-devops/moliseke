@@ -12,6 +12,7 @@ export default function Contact() {
           method='POST'
           className={styles.contactForm}
         >
+          <input type='hidden' name='form-name' value='contact' />
           <p className='sr-only'>
             <label>
               Don’t fill this out if you're human:
