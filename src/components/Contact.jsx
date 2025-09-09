@@ -10,6 +10,9 @@ export default function Contact() {
         <form
           name='contact'
           method='POST'
+          action='/forms/contact'
+          data-redirect='/'
+          encType='multipart/form-data'
           className={styles.contactForm}
         >
           <input type='hidden' name='form-name' value='contact' />
