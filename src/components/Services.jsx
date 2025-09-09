@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import styles from '../App.module.css';
 
 const C = { midnight: '#0E1B2E', brand: '#2A6AF4', teal: '#00796B' };
@@ -38,12 +38,31 @@ function Icon({ name, size = 20, color = C.brand }) {
 }
 
 export default function Services() {
+  const cardsRef = useRef([]);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.3 }
+    );
+
+    cardsRef.current.forEach((card) => card && observer.observe(card));
+    return () => observer.disconnect();
+  }, []);
+
   return (
     <section id='services' className={styles.sectionPad}>
       <div className='container'>
         <h2 className={styles.sectionHeading}>Services</h2>
         <div className={`grid grid-3 ${styles.servicesGrid}`}>
-          <div className='card'>
+          <div className='card' ref={(el) => (cardsRef.current[0] = el)}>
             <div className={styles.cardHeader}>
               <Icon name='cloud' />
               <h3>On-prem → Azure & AWS migrations</h3>
@@ -55,7 +74,7 @@ export default function Services() {
               <li>• Security & compliance baked-in</li>
             </ul>
           </div>
-          <div className='card'>
+          <div className='card' ref={(el) => (cardsRef.current[1] = el)}>
             <div className={styles.cardHeader}>
               <Icon name='stack' />
               <h3>Email to Microsoft 365 & Google Workspace</h3>
@@ -67,7 +86,7 @@ export default function Services() {
               <li>• End-user enablement & support</li>
             </ul>
           </div>
-          <div className='card'>
+          <div className='card' ref={(el) => (cardsRef.current[2] = el)}>
             <div className={styles.cardHeader}>
               <Icon name='server' />
               <h3>Infrastructure deployments with Terraform</h3>
