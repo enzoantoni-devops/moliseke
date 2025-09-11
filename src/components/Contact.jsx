@@ -6,11 +6,33 @@ export default function Contact() {
     <section id='contact' className={`${styles.sectionPad} ${styles.contactSection}`}>
       <div className='container'>
         <h2 className={styles.sectionHeadingLight}>Let’s talk about your migration</h2>
-        <p className={styles.contactText}>Email us a short note about your current environment and target platform. We’ll reply with a brief plan and timeline options.</p>
-        <div className={styles.contactActions}>
-          <a href='mailto:info@moliseke.com' className='btn btn-primary'>info@moliseke.com</a>
-          <a href='#services' className='btn btn-outline'>Explore services</a>
-        </div>
+        <p className={styles.contactText}>Send us a note about your current environment and target platform. We’ll reply with a brief plan and timeline options.</p>
+          <form
+            name='contact'
+            method='POST'
+            className={styles.contactForm}
+          >
+          <input type='hidden' name='form-name' value='contact' />
+          <p className='sr-only'>
+            <label>
+              Don’t fill this out if you're human:
+              <input name='bot-field' tabIndex='-1' autoComplete='off' />
+            </label>
+          </p>
+          <div className={styles.contactField}>
+            <label htmlFor='name'>Name</label>
+            <input id='name' type='text' name='name' required />
+          </div>
+          <div className={styles.contactField}>
+            <label htmlFor='email'>Email</label>
+            <input id='email' type='email' name='email' required />
+          </div>
+          <div className={styles.contactField}>
+            <label htmlFor='message'>Message</label>
+            <textarea id='message' name='message' rows='5' required></textarea>
+          </div>
+          <button type='submit' className='btn btn-primary'>Send message</button>
+        </form>
       </div>
     </section>
   );
