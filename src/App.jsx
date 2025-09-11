@@ -5,7 +5,7 @@ import Services from './components/Services';
 import Why from './components/Why';
 import Approach from './components/Approach';
 import Regions from './components/Regions';
-import Contact from './components/Contact';
+import ContactForm from './components/ContactForm';
 import Footer from './components/Footer';
 import styles from './App.module.css';
 
@@ -18,7 +18,7 @@ export default function App() {
       <Why />
       <Approach />
       <Regions />
-      <Contact />
+      <ContactForm />
       <Footer />
     </div>
   );
