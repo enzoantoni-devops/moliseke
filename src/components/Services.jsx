@@ -114,12 +114,16 @@ export default function Services() {
         </div>
         <div className={styles.logosGrid}>
           {logos.map(({ name, file }) => (
-            <img
-              key={file}
-              src={`/logos/${file}.svg`}
-              alt={`${name} logo`}
-              loading='lazy'
-            />
+            <span key={file} className={styles.logoItem}>
+              <img
+                src={`/logos/${file}.svg`}
+                alt={`${name} logo`}
+                width='32'
+                height='32'
+                loading='lazy'
+              />
+              {name}
+            </span>
           ))}
         </div>
       </div>

@@ -19,6 +19,7 @@
 .approachDesc{font-size:14px;opacity:.8}
 .regionsGrid{display:flex;flex-wrap:wrap;gap:10px;margin-top:10px}
 .flagChip{display:flex;align-items:center;gap:6px}
+.logoItem{display:flex;align-items:center;gap:6px}
 .logosGrid{display:flex;flex-wrap:wrap;gap:20px;align-items:center;margin-top:20px}
 .logosGrid img{height:32px}
 .contactSection{background:var(--midnight);color:#fff}
