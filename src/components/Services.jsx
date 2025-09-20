@@ -3,6 +3,19 @@ import styles from '../App.module.css';
 
 const C = { midnight: '#0E1B2E', brand: '#2A6AF4', teal: '#00796B' };
 
+const logos = [
+  { name: 'Microsoft 365', file: '365' },
+  { name: 'AWS', file: 'aws' },
+  { name: 'Azure', file: 'azure' },
+  { name: 'Elasticsearch', file: 'elasticsearch' },
+  { name: 'GitHub', file: 'github' },
+  { name: 'GitLab', file: 'gitlab' },
+  { name: 'SharePoint', file: 'sharepoint' },
+  { name: 'Slack', file: 'slack' },
+  { name: 'Teams', file: 'teams' },
+  { name: 'Windows', file: 'windows' },
+];
+
 function Icon({ name, size = 20, color = C.brand }) {
   const p = { fill: 'none', stroke: color, strokeWidth: 2, strokeLinecap: 'round', strokeLinejoin: 'round' };
   if (name === 'cloud')
@@ -98,6 +111,20 @@ export default function Services() {
               <li>• Documentation & handover</li>
             </ul>
           </div>
+        </div>
+        <div className={styles.logosGrid}>
+          {logos.map(({ name, file }) => (
+            <span key={file} className={styles.logoItem}>
+              <img
+                src={`/logos/${file}.svg`}
+                alt={`${name} logo`}
+                width='32'
+                height='32'
+                loading='lazy'
+              />
+              {name}
+            </span>
+          ))}
         </div>
       </div>
     </section>
